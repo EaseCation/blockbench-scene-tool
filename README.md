@@ -2,6 +2,8 @@
 
 这是一个用于 Blockbench 的简单的插件，旨在直接使用 BlockBench 制作 **游戏内** 可用的CG镜头与对应动画。
 
+![preview.gif](preview.gif)
+
 ## 功能特性
 
 ### 1. 骨骼前缀管理
@@ -13,6 +15,13 @@
 
 ## 安装方法
 
+### 在线URL安装
+1. 打开 Blockbench
+2. 点击 `文件 > 插件 > 从URL加载插件`
+3. 输入URL `https://raw.githubusercontent.com/EaseCation/blockbench-scene-tool/refs/heads/main/dist/scene-tool.js`
+4. 点击确认，插件将自动下载并安装
+
+### 本地文件安装
 1. 下载最新的 `scene-tool.js` 文件
 2. 在 Blockbench 中，点击 `文件 > 插件 > 加载插件 > 从文件加载`
 3. 选择下载好的 `scene-tool.js` 文件
