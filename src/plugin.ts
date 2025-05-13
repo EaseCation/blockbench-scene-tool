@@ -19,6 +19,7 @@ declare const Plugin: BBPlugin.PluginAPI;
 
 import { addAnimationPrefixAction } from './actions/animation-export';
 import { addBonePrefixAction } from './actions/bone-prefix';
+import { addSceneExportAction } from './actions/scene-export';
 
 /**
  * 注册插件
@@ -34,6 +35,7 @@ export function registerPlugin(): void {
             // 注册所有动作
             addBonePrefixAction();
             addAnimationPrefixAction();
+            addSceneExportAction();
         }
     });
 }
