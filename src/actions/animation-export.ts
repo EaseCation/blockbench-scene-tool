@@ -4,7 +4,7 @@
 export function addAnimationPrefixAction(): void {
     const action = new Action('export_animation_without_prefix', {
         name: '动画导出（过滤前缀)',
-        icon: 'text_fields',
+        icon: 'save',
         click: function () {
             onClick();
         }

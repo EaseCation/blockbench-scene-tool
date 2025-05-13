@@ -19,6 +19,7 @@ declare const Plugin: BBPlugin.PluginAPI;
 
 import { addAnimationPrefixAction } from './actions/animation-export';
 import { addBonePrefixAction } from './actions/bone-prefix';
+import { addIgnoreTexturesSaveMenu as addIgnoreTexturesSaveAction } from './actions/ignore-textures-save';
 import { addSceneExportAction } from './actions/scene-export';
 
 /**
@@ -36,6 +37,7 @@ export function registerPlugin(): void {
             addBonePrefixAction();
             addAnimationPrefixAction();
             addSceneExportAction();
+            addIgnoreTexturesSaveAction();
         }
     });
 }

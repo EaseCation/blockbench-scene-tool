@@ -4,7 +4,7 @@
 export function addSceneExportAction(): void {
     const action = new Action('export_scene', {
         name: '场景导出（用于ECCamera）',
-        icon: 'text_fields',
+        icon: 'save',
         click: function () {
             onClick();
         }

@@ -5,15 +5,15 @@ import { updateInterface } from '../utils/interface';
  * 注册添加骨骼前缀的动作
  */
 export function addBonePrefixAction(): void {
-    MenuBar.addAction(
-        new Action('add_bone_prefix', {
-            name: '添加/修改骨骼前缀',
-            icon: 'text_fields',
-            click: function () {
-                showPrefixDialog();
-            }
-        }), 'tools'
-    );
+    const action = new Action('add_bone_prefix', {
+        name: '添加/修改骨骼前缀',
+        icon: 'text_fields',
+        click: function () {
+            showPrefixDialog();
+        }
+    });
+    MenuBar.addAction(action, 'tools');
+    Group.prototype.menu?.addAction(action);
 }
 
 /**
