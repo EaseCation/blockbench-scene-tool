@@ -31,7 +31,7 @@ interface SceneExport {
     length: number
     actors: {
         [key: string]: {
-            client_aimation?: string,
+            client_animation?: string,
             keyframes?: _Keyframe[]
         }
     }
@@ -105,10 +105,10 @@ function onClick() {
         });
         const maxActorName = Object.keys(actorCount).reduce((a, b) => actorCount[a] > actorCount[b] ? a : b);
         if (json.actors[maxActorName]) {
-            json.actors[maxActorName].client_aimation = animationName;
+            json.actors[maxActorName].client_animation = animationName;
         } else {
             json.actors[maxActorName] = {
-                client_aimation: animationName
+                client_animation: animationName
             }
         }
 
